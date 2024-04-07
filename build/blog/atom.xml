@@ -14,7 +14,7 @@
         <updated>2021-08-26T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Docusaurus blogging features are powered by the blog plugin.]]></summary>
         <content type="html"><![CDATA[<p><a href="https://docusaurus.io/docs/blog" target="_blank" rel="noopener noreferrer">Docusaurus blogging features</a> are powered by the <a href="https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog" target="_blank" rel="noopener noreferrer">blog plugin</a>.</p>
-<p>Simply add Markdown files (or folders) to the <code>blog</code> directory.</p>
+<p>Simply add Markdown files1 (or folders) to the <code>blog</code> directory.</p>
 <p>Regular blog authors can be added to <code>authors.yml</code>.</p>
 <p>The blog post date can be extracted from filenames, such as:</p>
 <ul>
@@ -56,8 +56,8 @@
         <id>https://your-docusaurus-site.example.com/blog/long-blog-post</id>
         <link href="https://your-docusaurus-site.example.com/blog/long-blog-post"/>
         <updated>2019-05-29T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This is the summary of a very long blog post,]]></summary>
-        <content type="html"><![CDATA[<p>This is the summary of a very long blog post,</p>
+        <summary type="html"><![CDATA[This1 is the summary of a very long blog post,]]></summary>
+        <content type="html"><![CDATA[<p>This1 is the summary of a very long blog post,</p>
 <p>Use a <code>&lt;!--</code> <code>truncate</code> <code>--&gt;</code> comment to limit blog post size in the list view.</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
@@ -87,8 +87,8 @@
         <id>https://your-docusaurus-site.example.com/blog/first-blog-post</id>
         <link href="https://your-docusaurus-site.example.com/blog/first-blog-post"/>
         <updated>2019-05-28T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></summary>
-        <content type="html"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content>
+        <summary type="html"><![CDATA[Lorem1 ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></summary>
+        <content type="html"><![CDATA[<p>Lorem1 ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content>
         <author>
             <name>Gao Wei</name>
             <uri>https://github.com/wgao19</uri>
