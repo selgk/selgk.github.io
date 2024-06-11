@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[3926],{4294:e=>{e.exports=JSON.parse('{"label":"pyqt","permalink":"/blog/tags/pyqt","allTagsPath":"/blog/tags","count":4,"unlisted":false}')}}]);

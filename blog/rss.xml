@@ -1,39 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
-        <title>👋 I'm Selcuk, a software engineer. Blog</title>
-        <link>https://selcukgok.com.tr/blog</link>
-        <description>👋 I'm Selcuk, a software engineer. Blog</description>
-        <lastBuildDate>Sat, 08 Apr 2023 00:00:00 GMT</lastBuildDate>
+        <title>👋 I'm Selcuk, a software &amp; System and Network Engineer. Blog</title>
+        <link>https://github.com/selcukgok/blog</link>
+        <description>👋 I'm Selcuk, a software &amp; System and Network Engineer. Blog</description>
+        <lastBuildDate>Mon, 05 Sep 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <copyright>Copyright © 2024 Facebook, Inc.</copyright>
         <item>
-            <title><![CDATA[Modbus TCP web client.]]></title>
-            <link>https://selcukgok.com.tr/blog/modbustcpwebclient</link>
-            <guid>https://selcukgok.com.tr/blog/modbustcpwebclient</guid>
-            <pubDate>Sat, 08 Apr 2023 00:00:00 GMT</pubDate>
-            <description><![CDATA[Modbus TCP web client.Allow you to easily write to and read from registers on a web server.]]></description>
-            <content:encoded><![CDATA[<p>Modbus TCP web client.Allow you to easily write to and read from registers on a web server.</p>
-<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://selcukgok.com.tr/assets/images/1678997741809-eb059ef4b72a3f731db3cbb72dc4812d.gif" width="800" height="296" class="img_ev3q"></p>
-<p>This is simple Web Scraping project using beautifulsoup4 and requests module.</p>
-<p>Fetches the weather forcast based on the location (city) entered by the user</p>
-<p><a href="https://github.com/selcukgk29/modbus-tcp-web-client" target="_blank" rel="noopener noreferrer">Github</a></p>]]></content:encoded>
-            <category>mqtt</category>
-            <category>iot</category>
-            <category>pyqt</category>
-            <category>python</category>
-            <category>webscrapping</category>
-        </item>
-        <item>
-            <title><![CDATA[Linux System Memory Conf]]></title>
-            <link>https://selcukgok.com.tr/blog/sysmem</link>
-            <guid>https://selcukgok.com.tr/blog/sysmem</guid>
-            <pubDate>Sun, 05 Jun 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[Linux System memory konfigürasyonu]]></description>
-            <content:encoded><![CDATA[<p>Linux System memory konfigürasyonu</p>
-<p>Bu bölümde sistem memory kullanımı geliştirmek için kullanılan memory-related kernel parametlerini açıklayacağım. Bu parametreleri set etmek için kullanacağımız komut sysctl komutudur. Set edeceğimiz değerler /proc dizininde yer alır.Memory kullanımını basit olarak bir veya daha fazla kernel parametrelerini set ederek düzenleyebiliriz.</p>
+            <title><![CDATA[Linux System memory konfigürasyonu.]]></title>
+            <link>https://github.com/selcukgok/blog/linuxsysmem</link>
+            <guid>https://github.com/selcukgok/blog/linuxsysmem</guid>
+            <pubDate>Mon, 05 Sep 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Bu bölümde sistem memory kullanımı geliştirmek için kullanılan memory-related kernel parametlerini açıklayacağım. Bu parametreleri set etmek için kullanacağımız komut sysctl komutudur. Set edeceğimiz değerler /proc dizininde yer alır.Memory kullanımını basit olarak bir veya daha fazla kernel parametrelerini set ederek düzenleyebiliriz.]]></description>
+            <content:encoded><![CDATA[<p>Bu bölümde sistem memory kullanımı geliştirmek için kullanılan memory-related kernel parametlerini açıklayacağım. Bu parametreleri set etmek için kullanacağımız komut sysctl komutudur. Set edeceğimiz değerler /proc dizininde yer alır.Memory kullanımını basit olarak bir veya daha fazla kernel parametrelerini set ederek düzenleyebiliriz.</p>
 <p>Örnek</p>
 <p>overcommit_memory geçici olarak 1 e set etmek için</p>
 <p>Kalıcı set için</p>
@@ -53,41 +34,46 @@
 <p>min_free_kbytes<!-- -->:Systemde<!-- --> tutulacak minimum boş alandır.Kb cinsinde değer tanımlanır. Düşük değerler tanımlanmalıdır.Fazla değer tanımı sistemin hemen yetersiz bellek durumuna geçmesine ve kilitlenmesine neden olabilir.</p>
 <p>oom_adj<!-- -->:OOM<!-- --> Killer çalıştığında sistem kendini recover edene kadar oom_score en yüksekten başlayarak processleri kill eder. oom_adj processlerin oom_score unu tanımlaya yardım eder. Eğer oom_adj = -17 olursa oom_killer o process i kill etmez.</p>
 <p>Swappiness: RAM kullanımının yeterli olmadığı durumlarda sistem diskten bir bölüm ayırarak kullanır. Bu ayırılan bölüme swap memory denir. 0–100 arası bir değer alır. Default değeri 60 dır. Swappiness parametresi ne kadar yüksekse swap memory kullanımı o kadar artar.Bu da systemde yavaşlamaya neden olabilir.Düşük değerlerde swap yerine daha çok physcal RAM kullanılacağından sistem daha hızlı olur. Bu yüzden genellikle hızlandırmak için bu değer düşük seçilir.</p>]]></content:encoded>
-            <category>mqtt</category>
-            <category>iot</category>
-            <category>pyqt</category>
-            <category>python</category>
-            <category>webscrapping</category>
+            <category>linux</category>
         </item>
         <item>
             <title><![CDATA[A MQTT client with PyQt5]]></title>
-            <link>https://selcukgok.com.tr/blog/first-blog-post</link>
-            <guid>https://selcukgok.com.tr/blog/first-blog-post</guid>
-            <pubDate>Fri, 08 Apr 2022 00:00:00 GMT</pubDate>
+            <link>https://github.com/selcukgok/blog/mqttclient</link>
+            <guid>https://github.com/selcukgok/blog/mqttclient</guid>
+            <pubDate>Fri, 26 Aug 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[MQTT Smart Home Client GUI application that has been designed with PyQt5 to establish functions monitor.]]></description>
             <content:encoded><![CDATA[<p>MQTT Smart Home Client GUI application that has been designed with PyQt5 to establish functions monitor.</p>
-<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://selcukgok.com.tr/assets/images/1643583863074-01b618aaed4c59d5c66bc4a9c48674f6.jpeg" width="800" height="369" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://github.com/selcukgok/assets/images/1643583863074-01b618aaed4c59d5c66bc4a9c48674f6-01b618aaed4c59d5c66bc4a9c48674f6.jpeg" width="800" height="369" class="img_ev3q"></p>
 <p>SmarT TecH IOT Dashboard is MQTT client desktop application made using PyQT5 and paho-mqtt.You can control home temperature, swicthes and air conditioner. This will also run GUI application establish functions monitor.This Program to be designed consists of 2 components, namely Local MQTT Server, Fake temperature(mqtt.py) Node Client on a local network. Local MQTT Server to function as a server MQTT used between the Client for MQTT communication or place where the function "publish" and "subscribe" to be processed and regulated by the Server MQTT.</p>
-<p><a href="https://github.com/selcukgk29/A-MQTT-client-with-PyQt5-PSide2" target="_blank" rel="noopener noreferrer">Github</a></p>]]></content:encoded>
-            <category>mqtt</category>
-            <category>iot</category>
-            <category>pyqt</category>
-            <category>python</category>
+<p><a href="https://github.com/selcukgk29/A-MQTT-client-with-PyQt5-PSide2" target="_blank" rel="noopener noreferrer">GitHub</a></p>]]></content:encoded>
+            <category>MQTT</category>
+            <category>PYTHON</category>
         </item>
         <item>
             <title><![CDATA[Weather GUI application made using Python]]></title>
-            <link>https://selcukgok.com.tr/blog/weatherapp</link>
-            <guid>https://selcukgok.com.tr/blog/weatherapp</guid>
-            <pubDate>Tue, 05 Apr 2022 00:00:00 GMT</pubDate>
+            <link>https://github.com/selcukgok/blog/weatheraoo</link>
+            <guid>https://github.com/selcukgok/blog/weatheraoo</guid>
+            <pubDate>Sat, 20 Aug 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Modbus TCP web client.Allow you to easily write to and read from registers on a web server.]]></description>
             <content:encoded><![CDATA[<p>Modbus TCP web client.Allow you to easily write to and read from registers on a web server.</p>
-<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://selcukgok.com.tr/assets/images/150692720-72eb3f70-d5e4-428e-abcb-f4c709097d23-925605623d84ecbca91f59aa897cc03e.png" width="1145" height="640" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://github.com/selcukgok/assets/images/150692720-72eb3f70-d5e4-428e-abcb-f4c709097d23-925605623d84ecbca91f59aa897cc03e.png" width="1145" height="640" class="img_ev3q"></p>
 <p>This is simple Web Scraping project using beautifulsoup4 and requests module.</p>
 <p>Fetches the weather forcast based on the location (city) entered by the user.</p>
-<p><a href="https://github.com/selcukgk29/PySide2BeatifulSoupWebScrapping" target="_blank" rel="noopener noreferrer">Github</a></p>]]></content:encoded>
-            <category>pyqt</category>
-            <category>python</category>
-            <category>webscrapping</category>
+<p><a href="https://github.com/selcukgk29/PySide2BeatifulSoupWebScrapping" target="_blank" rel="noopener noreferrer">GitHub</a></p>]]></content:encoded>
+            <category>PYTHON</category>
+        </item>
+        <item>
+            <title><![CDATA[Modbus TCP web client.]]></title>
+            <link>https://github.com/selcukgok/blog/modbustcpwebclient</link>
+            <guid>https://github.com/selcukgok/blog/modbustcpwebclient</guid>
+            <pubDate>Thu, 05 Sep 2019 00:00:00 GMT</pubDate>
+            <description><![CDATA[A Modbus TCP web client facilitates easy communication with Modbus TCP servers, enabling seamless reading from and writing to registers. This application is commonly used in industrial automation, energy management, building automation, and IoT sectors for efficient data exchange and control.]]></description>
+            <content:encoded><![CDATA[<p>A Modbus TCP web client facilitates easy communication with Modbus TCP servers, enabling seamless reading from and writing to registers. This application is commonly used in industrial automation, energy management, building automation, and IoT sectors for efficient data exchange and control.</p>
+<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://github.com/selcukgok/assets/images/1678997741809-eb059ef4b72a3f731db3cbb72dc4812d-eb059ef4b72a3f731db3cbb72dc4812d.gif" width="800" height="296" class="img_ev3q"></p>
+<p><a href="https://github.com/selcukgk29/modbus-tcp-web-client" target="_blank" rel="noopener noreferrer">GitHub</a></p>]]></content:encoded>
+            <category>MQTT</category>
+            <category>IOT</category>
+            <category>PYTHON</category>
         </item>
     </channel>
 </rss>
