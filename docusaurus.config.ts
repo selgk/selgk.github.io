@@ -62,12 +62,12 @@ const config: Config = {
       items: [
         { to: "/blog", label: "Blog", position: "left" },
         {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://drive.google.com/file/d/1t3Gdy232ojoXSWuaeCW7K79zaL6g5Ke_/view?usp=sharing",
           position: "left",
           label: "CV",
         },
         {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://github.com/selcukgk29",
           label: "GitHub",
           position: "right",
         },
@@ -85,7 +85,7 @@ const config: Config = {
             },
             {
               label: "Discord",
-              href: "https://discord.gg/SxVcZxKv",
+              href: "https://discord.gg/eFgRR6fYAR",
             },
             {
               label: "GitHub",
