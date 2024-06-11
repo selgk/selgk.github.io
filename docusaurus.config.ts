@@ -7,19 +7,20 @@ const config: Config = {
   tagline: "Welcome to my personal blog.",
   favicon: "img/favicon.ico",
   // Set the production url of your site here
-  url: "https://your-docusaurus-site.example.com",
+  url: "https://selcukgok.com.tr",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "selcukgk29", // Usually your GitHub org/user name.
-  projectName: "selgk", // Usually your repo name.
+  organizationName: "selgk", // Usually your GitHub org/user name.
+  projectName: "selgk.github.io", // Usually your repo name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-
+  deploymentBranch: "main",
+  
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
