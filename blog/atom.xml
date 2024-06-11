@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://github.com/blog</id>
+    <id>https://selcukgok.com.tr/blog</id>
     <title>👋 I'm Selcuk, a software &amp; System and Network Engineer. Blog</title>
     <updated>2022-09-05T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://github.com/blog"/>
+    <link rel="alternate" href="https://selcukgok.com.tr/blog"/>
     <subtitle>👋 I'm Selcuk, a software &amp; System and Network Engineer. Blog</subtitle>
-    <icon>https://github.com/img/favicon.ico</icon>
+    <icon>https://selcukgok.com.tr/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Linux System memory konfigürasyonu.]]></title>
-        <id>https://github.com/blog/linuxsysmem</id>
-        <link href="https://github.com/blog/linuxsysmem"/>
+        <id>https://selcukgok.com.tr/blog/linuxsysmem</id>
+        <link href="https://selcukgok.com.tr/blog/linuxsysmem"/>
         <updated>2022-09-05T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Bu bölümde sistem memory kullanımı geliştirmek için kullanılan memory-related kernel parametlerini açıklayacağım. Bu parametreleri set etmek için kullanacağımız komut sysctl komutudur. Set edeceğimiz değerler /proc dizininde yer alır.Memory kullanımını basit olarak bir veya daha fazla kernel parametrelerini set ederek düzenleyebiliriz.]]></summary>
         <content type="html"><![CDATA[<p>Bu bölümde sistem memory kullanımı geliştirmek için kullanılan memory-related kernel parametlerini açıklayacağım. Bu parametreleri set etmek için kullanacağımız komut sysctl komutudur. Set edeceğimiz değerler /proc dizininde yer alır.Memory kullanımını basit olarak bir veya daha fazla kernel parametrelerini set ederek düzenleyebiliriz.</p>
@@ -41,12 +41,12 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[A MQTT client with PyQt5]]></title>
-        <id>https://github.com/blog/mqttclient</id>
-        <link href="https://github.com/blog/mqttclient"/>
+        <id>https://selcukgok.com.tr/blog/mqttclient</id>
+        <link href="https://selcukgok.com.tr/blog/mqttclient"/>
         <updated>2022-08-26T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[MQTT Smart Home Client GUI application that has been designed with PyQt5 to establish functions monitor.]]></summary>
         <content type="html"><![CDATA[<p>MQTT Smart Home Client GUI application that has been designed with PyQt5 to establish functions monitor.</p>
-<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://github.com/assets/images/1643583863074-01b618aaed4c59d5c66bc4a9c48674f6-01b618aaed4c59d5c66bc4a9c48674f6.jpeg" width="800" height="369" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://selcukgok.com.tr/assets/images/1643583863074-01b618aaed4c59d5c66bc4a9c48674f6-01b618aaed4c59d5c66bc4a9c48674f6.jpeg" width="800" height="369" class="img_ev3q"></p>
 <p>SmarT TecH IOT Dashboard is MQTT client desktop application made using PyQT5 and paho-mqtt.You can control home temperature, swicthes and air conditioner. This will also run GUI application establish functions monitor.This Program to be designed consists of 2 components, namely Local MQTT Server, Fake temperature(mqtt.py) Node Client on a local network. Local MQTT Server to function as a server MQTT used between the Client for MQTT communication or place where the function "publish" and "subscribe" to be processed and regulated by the Server MQTT.</p>
 <p><a href="https://github.com/selcukgk29/A-MQTT-client-with-PyQt5-PSide2" target="_blank" rel="noopener noreferrer">GitHub</a></p>]]></content>
         <author>
@@ -58,12 +58,12 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Weather GUI application made using Python]]></title>
-        <id>https://github.com/blog/weatheraoo</id>
-        <link href="https://github.com/blog/weatheraoo"/>
+        <id>https://selcukgok.com.tr/blog/weatheraoo</id>
+        <link href="https://selcukgok.com.tr/blog/weatheraoo"/>
         <updated>2022-08-20T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Modbus TCP web client.Allow you to easily write to and read from registers on a web server.]]></summary>
         <content type="html"><![CDATA[<p>Modbus TCP web client.Allow you to easily write to and read from registers on a web server.</p>
-<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://github.com/assets/images/150692720-72eb3f70-d5e4-428e-abcb-f4c709097d23-925605623d84ecbca91f59aa897cc03e.png" width="1145" height="640" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://selcukgok.com.tr/assets/images/150692720-72eb3f70-d5e4-428e-abcb-f4c709097d23-925605623d84ecbca91f59aa897cc03e.png" width="1145" height="640" class="img_ev3q"></p>
 <p>This is simple Web Scraping project using beautifulsoup4 and requests module.</p>
 <p>Fetches the weather forcast based on the location (city) entered by the user.</p>
 <p><a href="https://github.com/selcukgk29/PySide2BeatifulSoupWebScrapping" target="_blank" rel="noopener noreferrer">GitHub</a></p>]]></content>
@@ -75,12 +75,12 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Modbus TCP web client.]]></title>
-        <id>https://github.com/blog/modbustcpwebclient</id>
-        <link href="https://github.com/blog/modbustcpwebclient"/>
+        <id>https://selcukgok.com.tr/blog/modbustcpwebclient</id>
+        <link href="https://selcukgok.com.tr/blog/modbustcpwebclient"/>
         <updated>2019-09-05T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[A Modbus TCP web client facilitates easy communication with Modbus TCP servers, enabling seamless reading from and writing to registers. This application is commonly used in industrial automation, energy management, building automation, and IoT sectors for efficient data exchange and control.]]></summary>
         <content type="html"><![CDATA[<p>A Modbus TCP web client facilitates easy communication with Modbus TCP servers, enabling seamless reading from and writing to registers. This application is commonly used in industrial automation, energy management, building automation, and IoT sectors for efficient data exchange and control.</p>
-<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://github.com/assets/images/1678997741809-eb059ef4b72a3f731db3cbb72dc4812d-eb059ef4b72a3f731db3cbb72dc4812d.gif" width="800" height="296" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://selcukgok.com.tr/assets/images/1678997741809-eb059ef4b72a3f731db3cbb72dc4812d-eb059ef4b72a3f731db3cbb72dc4812d.gif" width="800" height="296" class="img_ev3q"></p>
 <p><a href="https://github.com/selcukgk29/modbus-tcp-web-client" target="_blank" rel="noopener noreferrer">GitHub</a></p>]]></content>
         <author>
             <name>Selcuk Gok</name>
