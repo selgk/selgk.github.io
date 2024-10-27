@@ -20,10 +20,6 @@
 <p>For instance, I can only monitor specific CAN messages rather than the entire data stream, which I would prefer. This necessitates periodically sending requests for data and parsing the output, which can significantly impact performance. Additionally, the ELM327 module sometimes struggles with timely data transmission.</p>
 <p>In the future, I plan to enhance the system by replacing the ELM327 with high-speed USB2CAN converters, allowing for more efficient data handling and broader access to CAN messages.</p>]]></content:encoded>
             <category>linux</category>
-            <category>elm327</category>
-            <category>bluetooth</category>
-            <category>qt</category>
-            <category>c++</category>
         </item>
         <item>
             <title><![CDATA[Dockerize MQTT protocol Logger.]]></title>

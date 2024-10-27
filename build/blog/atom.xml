@@ -23,10 +23,6 @@
             <uri>https://github.com/selcukgk29</uri>
         </author>
         <category label="linux" term="linux"/>
-        <category label="elm327" term="elm327"/>
-        <category label="bluetooth" term="bluetooth"/>
-        <category label="qt" term="qt"/>
-        <category label="c++" term="c++"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Dockerize MQTT protocol Logger.]]></title>
