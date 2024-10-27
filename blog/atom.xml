@@ -2,11 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://selcukgok.com.tr/blog</id>
     <title>👋 I'm Selcuk, a software &amp; System and Network Engineer. Blog</title>
-    <updated>2024-06-11T00:00:00.000Z</updated>
+    <updated>2024-10-27T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://selcukgok.com.tr/blog"/>
     <subtitle>👋 I'm Selcuk, a software &amp; System and Network Engineer. Blog</subtitle>
     <icon>https://selcukgok.com.tr/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Digital Cluster with OBD-II]]></title>
+        <id>https://selcukgok.com.tr/blog/digitalCluster</id>
+        <link href="https://selcukgok.com.tr/blog/digitalCluster"/>
+        <updated>2024-10-27T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Docusaurus Plushie]]></summary>
+        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://selcukgok.com.tr/assets/images/pics-4562c8e5925496b5bb0ce7900dbccdeb.jpg" width="1200" height="1600" class="img_ev3q"></p>
+<p><strong>Overview</strong></p>
+<p>I've been working on a digital cluster for my car, utilizing an ELM327-based Bluetooth OBD-II Bluetooth reader. This module is widely available online and operates using AT commands to retrieve CAN frames and device configurations. While it's an affordable option, it comes with certain limitations.</p>
+<p>For instance, I can only monitor specific CAN messages rather than the entire data stream, which I would prefer. This necessitates periodically sending requests for data and parsing the output, which can significantly impact performance. Additionally, the ELM327 module sometimes struggles with timely data transmission.</p>
+<p>In the future, I plan to enhance the system by replacing the ELM327 with high-speed USB2CAN converters, allowing for more efficient data handling and broader access to CAN messages.</p>]]></content>
+        <author>
+            <name>Selcuk Gok</name>
+            <uri>https://github.com/selcukgk29</uri>
+        </author>
+        <category label="linux" term="linux"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Dockerize MQTT protocol Logger.]]></title>
         <id>https://selcukgok.com.tr/blog/dockerizeprotocollogger</id>

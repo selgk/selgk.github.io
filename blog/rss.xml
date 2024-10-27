@@ -4,10 +4,23 @@
         <title>👋 I'm Selcuk, a software &amp; System and Network Engineer. Blog</title>
         <link>https://selcukgok.com.tr/blog</link>
         <description>👋 I'm Selcuk, a software &amp; System and Network Engineer. Blog</description>
-        <lastBuildDate>Tue, 11 Jun 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 27 Oct 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Digital Cluster with OBD-II]]></title>
+            <link>https://selcukgok.com.tr/blog/digitalCluster</link>
+            <guid>https://selcukgok.com.tr/blog/digitalCluster</guid>
+            <pubDate>Sun, 27 Oct 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Docusaurus Plushie]]></description>
+            <content:encoded><![CDATA[<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://selcukgok.com.tr/assets/images/pics-4562c8e5925496b5bb0ce7900dbccdeb.jpg" width="1200" height="1600" class="img_ev3q"></p>
+<p><strong>Overview</strong></p>
+<p>I've been working on a digital cluster for my car, utilizing an ELM327-based Bluetooth OBD-II Bluetooth reader. This module is widely available online and operates using AT commands to retrieve CAN frames and device configurations. While it's an affordable option, it comes with certain limitations.</p>
+<p>For instance, I can only monitor specific CAN messages rather than the entire data stream, which I would prefer. This necessitates periodically sending requests for data and parsing the output, which can significantly impact performance. Additionally, the ELM327 module sometimes struggles with timely data transmission.</p>
+<p>In the future, I plan to enhance the system by replacing the ELM327 with high-speed USB2CAN converters, allowing for more efficient data handling and broader access to CAN messages.</p>]]></content:encoded>
+            <category>linux</category>
+        </item>
         <item>
             <title><![CDATA[Dockerize MQTT protocol Logger.]]></title>
             <link>https://selcukgok.com.tr/blog/dockerizeprotocollogger</link>
