@@ -24,6 +24,8 @@ ELM327-based Bluetooth OBD-II-CAN reader.</p>
             <uri>https://github.com/selcukgk29</uri>
         </author>
         <category label="linux" term="linux"/>
+        <category label="Qt" term="Qt"/>
+        <category label="QML" term="QML"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Dockerize MQTT protocol Logger.]]></title>
