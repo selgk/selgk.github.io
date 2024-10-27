@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://selcukgok.com.tr/blog</id>
+    <title>👋 I'm Selcuk, a software &amp; System and Network Engineer. Blog</title>
+    <updated>2024-10-27T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://selcukgok.com.tr/blog"/>
+    <subtitle>👋 I'm Selcuk, a software &amp; System and Network Engineer. Blog</subtitle>
+    <icon>https://selcukgok.com.tr/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Digital Cluster with OBD-II]]></title>
+        <id>https://selcukgok.com.tr/blog/digitalCluster</id>
+        <link href="https://selcukgok.com.tr/blog/digitalCluster"/>
+        <updated>2024-10-27T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Docusaurus Plushie]]></summary>
+        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://selcukgok.com.tr/assets/images/pics-4562c8e5925496b5bb0ce7900dbccdeb.jpg" width="1200" height="1600" class="img_ev3q"></p>
+<p><strong>Overview</strong></p>
+<p>I've been working on a digital cluster for my car, utilizing an ELM327-based Bluetooth OBD-II Bluetooth reader. This module is widely available online and operates using AT commands to retrieve CAN frames and device configurations. While it's an affordable option, it comes with certain limitations.</p>
+<p>For instance, I can only monitor specific CAN messages rather than the entire data stream, which I would prefer. This necessitates periodically sending requests for data and parsing the output, which can significantly impact performance. Additionally, the ELM327 module sometimes struggles with timely data transmission.</p>
+<p>In the future, I plan to enhance the system by replacing the ELM327 with high-speed USB2CAN converters, allowing for more efficient data handling and broader access to CAN messages.</p>]]></content>
+        <author>
+            <name>Selcuk Gok</name>
+            <uri>https://github.com/selcukgk29</uri>
+        </author>
+        <category label="linux" term="linux"/>
+        <category label="elm327" term="elm327"/>
+        <category label="bluetooth" term="bluetooth"/>
+        <category label="qt" term="qt"/>
+        <category label="c++" term="c++"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Dockerize MQTT protocol Logger.]]></title>
+        <id>https://selcukgok.com.tr/blog/dockerizeprotocollogger</id>
+        <link href="https://selcukgok.com.tr/blog/dockerizeprotocollogger"/>
+        <updated>2024-06-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Docusaurus Plushie]]></summary>
+        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://selcukgok.com.tr/assets/images/clicompose-a7f55a6407176af7366f85b697bd1738.PNG" width="1060" height="773" class="img_ev3q">
+Bu Dockerize edilmiş MQTT protokol logger uygulaması, 4 adet Docker container'ından oluşmaktadır: Python logger servisi, Node.js REST API servisi, Mosquitto MQTT brokeri ve MongoDB sunucusu. Uygulamanın çalışma mantığı şu şekildedir:</p>
+<p><strong>Python Logger Servisi:</strong></p>
+<p>Başlangıçta çalışarak MQTT brokerına ve MongoDB sunucusuna bağlanır.
+MQTT brokerı üzerinde oluşmuş tüm topic'leri dinler.
+Herhangi bir MQTT topic'ine yeni veri ulaştığında, bu topic adında bir MongoDB koleksiyonu oluşturur.
+Verileri ilgili koleksiyon içine yazarak MongoDB'ye kaydeder.</p>
+<p><strong>Mosquitto MQTT Broker:</strong></p>
+<p>MQTT istemcileri ve Python logger servisi arasında mesajlaşma sağlar.
+Belirli bir MQTT topic'ine abone olan istemcilere mesajları iletebilir.</p>
+<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://selcukgok.com.tr/assets/images/mqttbox-390ed39b355c4689c9ab6d970cf42918.PNG" width="753" height="688" class="img_ev3q"></p>
+<p><strong>MongoDB Sunucusu:</strong></p>
+<p>Veritabanı olarak kullanılır.
+Python logger servisinin aldığı MQTT verilerini saklamak için kullanılır.
+Her MQTT topic'i için ayrı bir MongoDB koleksiyonu oluşturur ve bu koleksiyonlara veri kaydeder.</p>
+<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://selcukgok.com.tr/assets/images/mongosh-946ffc2f7be87a9a389e7385170cef7f.PNG" width="752" height="688" class="img_ev3q"></p>
+<p><strong>Node.js REST API Servisi:</strong></p>
+<p>MongoDB sunucusundaki verilere erişim sağlamak ve istemcilere HTTP API üzerinden veri sunmak için kullanılır.
+İstemcilerin MongoDB'deki verilere erişmesine, veri eklemesine veya güncellemesine izin veren HTTP endpoint'leri sunar.</p>
+<p>Node.js REST API servisi, istemcilerin MongoDB sunucusundaki verilere HTTP API üzerinden erişmesine olanak tanır. REST API servisinize gelen isteklerin kimlik doğrulaması için Bearer token gereklidir.Login requestinin response unda bu token bulunur.Aşağıda belirtilen HTTP endpoint'leri sağlar:</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="userlogin"><code>/user/login</code><a class="hash-link" aria-label="Direct link to userlogin" title="Direct link to userlogin" href="https://selcukgok.com.tr/blog/dockerizeprotocollogger#userlogin">​</a></h3>
+<ul>
+<li>
+<p><strong>Açıklama</strong>: Kullanıcı girişi için POST isteği alır.</p>
+</li>
+<li>
+<p><strong>Örnek İstek</strong>:</p>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">POST http://localhost:5000/user/login</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "email": "asd@asd.com",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "password": "123456"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="getall"><code>/getAll</code><a class="hash-link" aria-label="Direct link to getall" title="Direct link to getall" href="https://selcukgok.com.tr/blog/dockerizeprotocollogger#getall">​</a></h3>
+<ul>
+<li>
+<p><strong>Açıklama</strong>: Belirtilen koleksiyondaki tüm belgeleri almak için GET isteği alır.</p>
+</li>
+<li>
+<p><strong>Örnek İstek</strong>:</p>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">GET http://localhost:5000/getAll</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "request": {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    "type": "GET",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    "method": "getAll",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    "url": "http://localhost:3000/getAll",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    "body": {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      "message": "Please choose collection",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      "collections": [</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        "users",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        "testtopic0"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      ]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="getalltesttopic0"><code>/getAll/testtopic0</code><a class="hash-link" aria-label="Direct link to getalltesttopic0" title="Direct link to getalltesttopic0" href="https://selcukgok.com.tr/blog/dockerizeprotocollogger#getalltesttopic0">​</a></h3>
+<ul>
+<li>
+<p><strong>Açıklama</strong>: <code>testtopic0</code> koleksiyonundaki belgeleri almak için GET isteği alır.</p>
+</li>
+<li>
+<p><strong>Örnek İstek</strong>:</p>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">GET http://localhost:5000/getAll/testtopic0</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "request": {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    "type": "GET",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    "url": "http://localhost:3000/getAll/testtopic0",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    "body": {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      "message": "Response is coming from testtopic0 collection",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      "values": [</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          "_id": "6668b9d26379a9f6d0d75288",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          "topic": "testtopic0",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          "payload": [</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">              "testkey": "560,456"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          "time": 1718139346167</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        },</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          "_id": "6668ba076379a9f6d0d7528a",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          "topic": "testtopic0",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          "payload": [</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">              "testkey": "460,456"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          "time": 1718139399258</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        },</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          "_id": "6668ba0e6379a9f6d0d7528c",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          "topic": "testtopic0",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          "payload": [</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">              "testkey": "460,456"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          "time": 1718139406714</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        },</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          "_id": "6668ba126379a9f6d0d7528e",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          "topic": "testtopic0",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          "payload": [</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">              "testkey": "480,456"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          "time": 1718139410901</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        },</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          "_id": "6668ba176379a9f6d0d75290",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          "topic": "testtopic0",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          "payload": [</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">              "testkey": "489,456"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          "time": 1718139415455</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      ]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="getbydatetesttopic0fromstarttimestamptoendtimestamp"><code>/getByDate/testtopic0/from=&lt;starttimestamp&gt;/to=&lt;endtimestamp&gt;</code><a class="hash-link" aria-label="Direct link to getbydatetesttopic0fromstarttimestamptoendtimestamp" title="Direct link to getbydatetesttopic0fromstarttimestamptoendtimestamp" href="https://selcukgok.com.tr/blog/dockerizeprotocollogger#getbydatetesttopic0fromstarttimestamptoendtimestamp">​</a></h3>
+<ul>
+<li>
+<p><strong>Açıklama</strong>: Belirtilen zaman aralığı içindeki <code>testtopic0</code> koleksiyonundaki belgeleri almak için GET isteği alır.</p>
+</li>
+<li>
+<p><strong>Örnek İstek</strong>:</p>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">GET http://localhost:5000/getByDate/testtopic0/from=1718139346167/to=1718139415455</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ul>
+<p>Bu endpoint'ler, istemcilere belirli koleksiyonlardaki verilere erişme ve işlemler yapma imkanı sağlar. MongoDB veritabanınızda ilgili koleksiyonların ve istemci isteklerinin doğru şekilde yönlendirilmesini sağlamak için bu örnekler üzerinden ilerleyebilirsiniz.</p>]]></content>
+        <author>
+            <name>Selcuk Gok</name>
+            <uri>https://github.com/selcukgk29</uri>
+        </author>
+        <category label="linux" term="linux"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Linux System memory konfigürasyonu.]]></title>
+        <id>https://selcukgok.com.tr/blog/linuxsysmem</id>
+        <link href="https://selcukgok.com.tr/blog/linuxsysmem"/>
+        <updated>2022-09-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Bu bölümde sistem memory kullanımı geliştirmek için kullanılan memory-related kernel parametlerini açıklayacağım. Bu parametreleri set etmek için kullanacağımız komut sysctl komutudur. Set edeceğimiz değerler /proc dizininde yer alır.Memory kullanımını basit olarak bir veya daha fazla kernel parametrelerini set ederek düzenleyebiliriz.]]></summary>
+        <content type="html"><![CDATA[<p>Bu bölümde sistem memory kullanımı geliştirmek için kullanılan memory-related kernel parametlerini açıklayacağım. Bu parametreleri set etmek için kullanacağımız komut sysctl komutudur. Set edeceğimiz değerler /proc dizininde yer alır.Memory kullanımını basit olarak bir veya daha fazla kernel parametrelerini set ederek düzenleyebiliriz.</p>
+<p>Örnek</p>
+<p>overcommit_memory geçici olarak 1 e set etmek için</p>
+<p>Kalıcı set için</p>
+<p>/etc/sysctl.conf dizindeki dosyadan veya direkt aşağıdaki komutla konfigüre edilebilir.</p>
+<p>#sysctl vm.overcommit_memory=1 /etc/sysctl.conf</p>
+<p>#sysctl -p komutu ile uygulanmış tüm konfigürasyonları görebilirsiniz.</p>
+<p>Virtual Memory Parameters</p>
+<p>Virtual memory parametreleri genellikle /proc/sys/vm dizini altında bulunur.</p>
+<p>dirty_ratio<!-- -->:Y<!-- -->üzdesel bir değerdir. Total system memory bu değer kadar değiştiğinde, system geri kalan değişiklikleri disk e yazmaya başlıyor.Default değeri %20 dir.</p>
+<p>dirty_background_ratio <!-- -->:Y<!-- -->üzdesel bir değerdir. Total system memory bu değer kadar değiştiğinde, system geri kalan değişiklikleri arkaplanda disk e yazmaya başlıyor.Default değeri %10 dur.</p>
+<p>overcommit_memory<!-- -->:Fazla<!-- --> memory kullanımını engellemeyi veya kabul etmeyi tanımladığımız parametredir.</p>
+<p>Default değeri 0 dır. Bu modda kernel heuristic algoritmasını kullanarak memory kullanımına karar verir.(Heuristic algoritma en iyi sonucu garanti etmez fakat makul sürede iyiye yakın bir sonuç verir). Process lerde oom killer çalışma riski vardır.</p>
+<p>Parametre 1 e ayarlandığında kernel memory taşmalarına karşı bir işlem gerçekleştirmez. Yoğun bellek kullanımlarında performansı artırır.</p>
+<p>Parametre 2 e ayarlandığında kernel memory kullanım istekleri, toplam kullanılabilir swap memory ve overcommit_ratio da tanımladığımız fiziksel RAM yüzdesinden fazlaysa engeller. Bu mod belleğin aşırı yüklenme riskini azaltır sadece yeteri kadar swap memory ve physical memory varsa kullanılmalıdır.</p>
+<p>overcommit_radio<!-- -->:overcommit_memory<!-- --> 2 olarak ayarlandığında dikkate alınan RAM yüzdesini belirtir.Varsayılan değeri %50 dir.</p>
+<p>max_map_count<!-- -->:Processlerin<!-- --> kullandığı maximum memory map alanlarını tanımlar.Default değeri 65530.</p>
+<p>min_free_kbytes<!-- -->:Systemde<!-- --> tutulacak minimum boş alandır.Kb cinsinde değer tanımlanır. Düşük değerler tanımlanmalıdır.Fazla değer tanımı sistemin hemen yetersiz bellek durumuna geçmesine ve kilitlenmesine neden olabilir.</p>
+<p>oom_adj<!-- -->:OOM<!-- --> Killer çalıştığında sistem kendini recover edene kadar oom_score en yüksekten başlayarak processleri kill eder. oom_adj processlerin oom_score unu tanımlaya yardım eder. Eğer oom_adj = -17 olursa oom_killer o process i kill etmez.</p>
+<p>Swappiness: RAM kullanımının yeterli olmadığı durumlarda sistem diskten bir bölüm ayırarak kullanır. Bu ayırılan bölüme swap memory denir. 0–100 arası bir değer alır. Default değeri 60 dır. Swappiness parametresi ne kadar yüksekse swap memory kullanımı o kadar artar.Bu da systemde yavaşlamaya neden olabilir.Düşük değerlerde swap yerine daha çok physcal RAM kullanılacağından sistem daha hızlı olur. Bu yüzden genellikle hızlandırmak için bu değer düşük seçilir.</p>]]></content>
+        <author>
+            <name>Selcuk Gok</name>
+            <uri>https://github.com/selcukgk29</uri>
+        </author>
+        <category label="linux" term="linux"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[A MQTT client with PyQt5]]></title>
+        <id>https://selcukgok.com.tr/blog/mqttclient</id>
+        <link href="https://selcukgok.com.tr/blog/mqttclient"/>
+        <updated>2022-08-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[MQTT Smart Home Client GUI application that has been designed with PyQt5 to establish functions monitor.]]></summary>
+        <content type="html"><![CDATA[<p>MQTT Smart Home Client GUI application that has been designed with PyQt5 to establish functions monitor.</p>
+<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://selcukgok.com.tr/assets/images/1643583863074-01b618aaed4c59d5c66bc4a9c48674f6-01b618aaed4c59d5c66bc4a9c48674f6.jpeg" width="800" height="369" class="img_ev3q"></p>
+<p>SmarT TecH IOT Dashboard is MQTT client desktop application made using PyQT5 and paho-mqtt.You can control home temperature, swicthes and air conditioner. This will also run GUI application establish functions monitor.This Program to be designed consists of 2 components, namely Local MQTT Server, Fake temperature(mqtt.py) Node Client on a local network. Local MQTT Server to function as a server MQTT used between the Client for MQTT communication or place where the function "publish" and "subscribe" to be processed and regulated by the Server MQTT.</p>
+<p><a href="https://github.com/selcukgk29/A-MQTT-client-with-PyQt5-PSide2" target="_blank" rel="noopener noreferrer">GitHub</a></p>]]></content>
+        <author>
+            <name>Selcuk Gok</name>
+            <uri>https://github.com/selcukgk29</uri>
+        </author>
+        <category label="MQTT" term="MQTT"/>
+        <category label="PYTHON" term="PYTHON"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weather GUI application made using Python]]></title>
+        <id>https://selcukgok.com.tr/blog/weatheraoo</id>
+        <link href="https://selcukgok.com.tr/blog/weatheraoo"/>
+        <updated>2022-08-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Modbus TCP web client.Allow you to easily write to and read from registers on a web server.]]></summary>
+        <content type="html"><![CDATA[<p>Modbus TCP web client.Allow you to easily write to and read from registers on a web server.</p>
+<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://selcukgok.com.tr/assets/images/150692720-72eb3f70-d5e4-428e-abcb-f4c709097d23-925605623d84ecbca91f59aa897cc03e.png" width="1145" height="640" class="img_ev3q"></p>
+<p>This is simple Web Scraping project using beautifulsoup4 and requests module.</p>
+<p>Fetches the weather forcast based on the location (city) entered by the user.</p>
+<p><a href="https://github.com/selcukgk29/PySide2BeatifulSoupWebScrapping" target="_blank" rel="noopener noreferrer">GitHub</a></p>]]></content>
+        <author>
+            <name>Selcuk Gok</name>
+            <uri>https://github.com/selcukgk29</uri>
+        </author>
+        <category label="PYTHON" term="PYTHON"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Modbus TCP web client.]]></title>
+        <id>https://selcukgok.com.tr/blog/modbustcpwebclient</id>
+        <link href="https://selcukgok.com.tr/blog/modbustcpwebclient"/>
+        <updated>2019-09-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A Modbus TCP web client facilitates easy communication with Modbus TCP servers, enabling seamless reading from and writing to registers. This application is commonly used in industrial automation, energy management, building automation, and IoT sectors for efficient data exchange and control.]]></summary>
+        <content type="html"><![CDATA[<p>A Modbus TCP web client facilitates easy communication with Modbus TCP servers, enabling seamless reading from and writing to registers. This application is commonly used in industrial automation, energy management, building automation, and IoT sectors for efficient data exchange and control.</p>
+<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://selcukgok.com.tr/assets/images/1678997741809-eb059ef4b72a3f731db3cbb72dc4812d-eb059ef4b72a3f731db3cbb72dc4812d.gif" width="800" height="296" class="img_ev3q"></p>
+<p><a href="https://github.com/selcukgk29/modbus-tcp-web-client" target="_blank" rel="noopener noreferrer">GitHub</a></p>]]></content>
+        <author>
+            <name>Selcuk Gok</name>
+            <uri>https://github.com/selcukgk29</uri>
+        </author>
+        <category label="MQTT" term="MQTT"/>
+        <category label="IOT" term="IOT"/>
+        <category label="PYTHON" term="PYTHON"/>
+    </entry>
+</feed>
