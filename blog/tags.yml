@@ -14,3 +14,11 @@ linux:
   label: linux
   permalink: /linux
   description: linux
+Qt:
+  label: Qt
+  permalink: /qt
+  description: qt softwares
+QLM:
+  label: QLM
+  permalink: /QLM
+  description: QLM

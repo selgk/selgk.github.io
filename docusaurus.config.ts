@@ -62,7 +62,7 @@ const config: Config = {
       items: [
         { to: "/blog", label: "Blog", position: "left" },
         {
-          href: "https://drive.google.com/file/d/1t3Gdy232ojoXSWuaeCW7K79zaL6g5Ke_/view?usp=sharing",
+          href: "https://drive.google.com/file/d/15EO4LtaYVvO-T2a_baYcC1FYQONeYMSV/view?usp=sharing",
           position: "left",
           label: "CV",
         },

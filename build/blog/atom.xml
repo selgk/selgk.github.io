@@ -13,7 +13,8 @@
         <link href="https://selcukgok.com.tr/blog/digitalCluster"/>
         <updated>2024-10-27T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Docusaurus Plushie]]></summary>
-        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://selcukgok.com.tr/assets/images/pics-4562c8e5925496b5bb0ce7900dbccdeb.jpg" width="1200" height="1600" class="img_ev3q"></p>
+        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://selcukgok.com.tr/assets/images/pics-4562c8e5925496b5bb0ce7900dbccdeb.jpg" width="1200" height="1600" class="img_ev3q">
+ELM327-based Bluetooth OBD-II-CAN reader.</p>
 <p><strong>Overview</strong></p>
 <p>I've been working on a digital cluster for my car, utilizing an ELM327-based Bluetooth OBD-II Bluetooth reader. This module is widely available online and operates using AT commands to retrieve CAN frames and device configurations. While it's an affordable option, it comes with certain limitations.</p>
 <p>For instance, I can only monitor specific CAN messages rather than the entire data stream, which I would prefer. This necessitates periodically sending requests for data and parsing the output, which can significantly impact performance. Additionally, the ELM327 module sometimes struggles with timely data transmission.</p>
@@ -23,6 +24,8 @@
             <uri>https://github.com/selcukgk29</uri>
         </author>
         <category label="linux" term="linux"/>
+        <category label="Qt" term="Qt"/>
+        <category label="QML" term="QML"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Dockerize MQTT protocol Logger.]]></title>
