@@ -129,6 +129,23 @@ Her MQTT topic'i için ayrı bir MongoDB koleksiyonu oluşturur ve bu koleksiyon
         <category label="linux" term="linux"/>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Modbus TCP web client.]]></title>
+        <id>https://selcukgok.com.tr/blog/modbustcpwebclient</id>
+        <link href="https://selcukgok.com.tr/blog/modbustcpwebclient"/>
+        <updated>2022-09-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A Modbus TCP web client facilitates easy communication with Modbus TCP servers, enabling seamless reading from and writing to registers. This application is commonly used in industrial automation, energy management, building automation, and IoT sectors for efficient data exchange and control.]]></summary>
+        <content type="html"><![CDATA[<p>A Modbus TCP web client facilitates easy communication with Modbus TCP servers, enabling seamless reading from and writing to registers. This application is commonly used in industrial automation, energy management, building automation, and IoT sectors for efficient data exchange and control.</p>
+<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://selcukgok.com.tr/assets/images/1678997741809-eb059ef4b72a3f731db3cbb72dc4812d-eb059ef4b72a3f731db3cbb72dc4812d.gif" width="800" height="296" class="img_ev3q"></p>
+<p><a href="https://github.com/selcukgk29/modbus-tcp-web-client" target="_blank" rel="noopener noreferrer">GitHub</a></p>]]></content>
+        <author>
+            <name>Selcuk Gok</name>
+            <uri>https://github.com/selcukgk29</uri>
+        </author>
+        <category label="MQTT" term="MQTT"/>
+        <category label="IOT" term="IOT"/>
+        <category label="PYTHON" term="PYTHON"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Linux System memory konfigürasyonu.]]></title>
         <id>https://selcukgok.com.tr/blog/linuxsysmem</id>
         <link href="https://selcukgok.com.tr/blog/linuxsysmem"/>
@@ -192,23 +209,6 @@ Her MQTT topic'i için ayrı bir MongoDB koleksiyonu oluşturur ve bu koleksiyon
             <name>Selcuk Gok</name>
             <uri>https://github.com/selcukgk29</uri>
         </author>
-        <category label="PYTHON" term="PYTHON"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Modbus TCP web client.]]></title>
-        <id>https://selcukgok.com.tr/blog/modbustcpwebclient</id>
-        <link href="https://selcukgok.com.tr/blog/modbustcpwebclient"/>
-        <updated>2019-09-05T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[A Modbus TCP web client facilitates easy communication with Modbus TCP servers, enabling seamless reading from and writing to registers. This application is commonly used in industrial automation, energy management, building automation, and IoT sectors for efficient data exchange and control.]]></summary>
-        <content type="html"><![CDATA[<p>A Modbus TCP web client facilitates easy communication with Modbus TCP servers, enabling seamless reading from and writing to registers. This application is commonly used in industrial automation, energy management, building automation, and IoT sectors for efficient data exchange and control.</p>
-<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://selcukgok.com.tr/assets/images/1678997741809-eb059ef4b72a3f731db3cbb72dc4812d-eb059ef4b72a3f731db3cbb72dc4812d.gif" width="800" height="296" class="img_ev3q"></p>
-<p><a href="https://github.com/selcukgk29/modbus-tcp-web-client" target="_blank" rel="noopener noreferrer">GitHub</a></p>]]></content>
-        <author>
-            <name>Selcuk Gok</name>
-            <uri>https://github.com/selcukgk29</uri>
-        </author>
-        <category label="MQTT" term="MQTT"/>
-        <category label="IOT" term="IOT"/>
         <category label="PYTHON" term="PYTHON"/>
     </entry>
 </feed>
