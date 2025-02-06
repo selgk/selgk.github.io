@@ -2,11 +2,39 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://selcukgok.com.tr/blog</id>
     <title>👋 I'm Selcuk, a software &amp; System and Network Engineer. Blog</title>
-    <updated>2024-10-27T00:00:00.000Z</updated>
+    <updated>2025-02-05T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://selcukgok.com.tr/blog"/>
     <subtitle>👋 I'm Selcuk, a software &amp; System and Network Engineer. Blog</subtitle>
     <icon>https://selcukgok.com.tr/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Smart Cluster for Electric Karting]]></title>
+        <id>https://selcukgok.com.tr/blog/karting-cluster</id>
+        <link href="https://selcukgok.com.tr/blog/karting-cluster"/>
+        <updated>2025-02-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Smart Cluster Design for Electric Karting ⚡🏎️🚀]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="smart-cluster-design-for-electric-karting-️">Smart Cluster Design for Electric Karting ⚡🏎️🚀<a class="hash-link" aria-label="Direct link to Smart Cluster Design for Electric Karting ⚡🏎️🚀" title="Direct link to Smart Cluster Design for Electric Karting ⚡🏎️🚀" href="https://selcukgok.com.tr/blog/karting-cluster#smart-cluster-design-for-electric-karting-%EF%B8%8F">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="video">Video<a class="hash-link" aria-label="Direct link to Video" title="Direct link to Video" href="https://selcukgok.com.tr/blog/karting-cluster#video">​</a></h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5CaiZxxlBPk" frameborder="0"></iframe>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="overview">Overview<a class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview" href="https://selcukgok.com.tr/blog/karting-cluster#overview">​</a></h3>
+<p>In this project, I developed a <strong>QT C++</strong> application to create a smart dashboard for an electric kart. The system gathers real-time data from the <strong>Curtis AC F2-A motor controller</strong> and the <strong>Battery Management System (BMS)</strong> using <strong>PeakCAN</strong> and displays it on a <strong>custom driver interface</strong>.</p>
+<p>This smart cluster provides essential <strong>motor and battery telemetry</strong>, including:</p>
+<ul>
+<li><strong>Speed, RPM, and torque output</strong> from the Curtis AC F2-A controller</li>
+<li><strong>Battery voltage, current, and temperature</strong> from the BMS</li>
+<li><strong>Error codes and system diagnostics</strong> for real-time monitoring</li>
+</ul>
+<p>The interface is built using <strong>Qt and QML</strong>, ensuring a modern and responsive display optimized for high-speed karting. By leveraging <strong>PeakCAN</strong>, the system efficiently communicates with the motor controller and BMS over <strong>CAN bus</strong>, ensuring <strong>low-latency and high-accuracy data visualization</strong>.</p>
+<p>This project enhances the electric karting experience by providing drivers with <strong>critical performance insights</strong> in real time.</p>
+<p>🚀 Watch the video to see it in action!</p>]]></content>
+        <author>
+            <name>Selcuk Gok</name>
+            <uri>https://github.com/selcukgk29</uri>
+        </author>
+        <category label="linux" term="linux"/>
+        <category label="Qt" term="Qt"/>
+        <category label="QML" term="QML"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Digital Cluster with OBD-II]]></title>
         <id>https://selcukgok.com.tr/blog/digitalCluster</id>
