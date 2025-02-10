@@ -13,9 +13,8 @@
             <link>https://selcukgok.com.tr/blog/karting-cluster</link>
             <guid>https://selcukgok.com.tr/blog/karting-cluster</guid>
             <pubDate>Wed, 05 Feb 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[Smart Cluster Design for Electric Karting ⚡🏎️🚀]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="smart-cluster-design-for-electric-karting-️">Smart Cluster Design for Electric Karting ⚡🏎️🚀<a class="hash-link" aria-label="Direct link to Smart Cluster Design for Electric Karting ⚡🏎️🚀" title="Direct link to Smart Cluster Design for Electric Karting ⚡🏎️🚀" href="https://selcukgok.com.tr/blog/karting-cluster#smart-cluster-design-for-electric-karting-%EF%B8%8F">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="video">Video<a class="hash-link" aria-label="Direct link to Video" title="Direct link to Video" href="https://selcukgok.com.tr/blog/karting-cluster#video">​</a></h3>
+            <description><![CDATA[Video]]></description>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="video">Video<a class="hash-link" aria-label="Direct link to Video" title="Direct link to Video" href="https://selcukgok.com.tr/blog/karting-cluster#video">​</a></h3>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5CaiZxxlBPk" frameborder="0"></iframe>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="overview">Overview<a class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview" href="https://selcukgok.com.tr/blog/karting-cluster#overview">​</a></h3>
 <p>In this project, I developed a <strong>QT C++</strong> application to create a smart dashboard for an electric kart. The system gathers real-time data from the <strong>Curtis AC F2-A motor controller</strong> and the <strong>Battery Management System (BMS)</strong> using <strong>PeakCAN</strong> and displays it on a <strong>custom driver interface</strong>.</p>
@@ -118,19 +117,6 @@ Her MQTT topic'i için ayrı bir MongoDB koleksiyonu oluşturur ve bu koleksiyon
             <category>linux</category>
         </item>
         <item>
-            <title><![CDATA[Modbus TCP web client.]]></title>
-            <link>https://selcukgok.com.tr/blog/modbustcpwebclient</link>
-            <guid>https://selcukgok.com.tr/blog/modbustcpwebclient</guid>
-            <pubDate>Mon, 05 Sep 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[A Modbus TCP web client facilitates easy communication with Modbus TCP servers, enabling seamless reading from and writing to registers. This application is commonly used in industrial automation, energy management, building automation, and IoT sectors for efficient data exchange and control.]]></description>
-            <content:encoded><![CDATA[<p>A Modbus TCP web client facilitates easy communication with Modbus TCP servers, enabling seamless reading from and writing to registers. This application is commonly used in industrial automation, energy management, building automation, and IoT sectors for efficient data exchange and control.</p>
-<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://selcukgok.com.tr/assets/images/1678997741809-eb059ef4b72a3f731db3cbb72dc4812d-eb059ef4b72a3f731db3cbb72dc4812d.gif" width="800" height="296" class="img_ev3q"></p>
-<p><a href="https://github.com/selcukgk29/modbus-tcp-web-client" target="_blank" rel="noopener noreferrer">GitHub</a></p>]]></content:encoded>
-            <category>MQTT</category>
-            <category>IOT</category>
-            <category>PYTHON</category>
-        </item>
-        <item>
             <title><![CDATA[Linux System memory konfigürasyonu.]]></title>
             <link>https://selcukgok.com.tr/blog/linuxsysmem</link>
             <guid>https://selcukgok.com.tr/blog/linuxsysmem</guid>
@@ -159,6 +145,19 @@ Her MQTT topic'i için ayrı bir MongoDB koleksiyonu oluşturur ve bu koleksiyon
             <category>linux</category>
         </item>
         <item>
+            <title><![CDATA[Modbus TCP web client.]]></title>
+            <link>https://selcukgok.com.tr/blog/modbustcpwebclient</link>
+            <guid>https://selcukgok.com.tr/blog/modbustcpwebclient</guid>
+            <pubDate>Mon, 05 Sep 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[A Modbus TCP web client facilitates easy communication with Modbus TCP servers, enabling seamless reading from and writing to registers. This application is commonly used in industrial automation, energy management, building automation, and IoT sectors for efficient data exchange and control.]]></description>
+            <content:encoded><![CDATA[<p>A Modbus TCP web client facilitates easy communication with Modbus TCP servers, enabling seamless reading from and writing to registers. This application is commonly used in industrial automation, energy management, building automation, and IoT sectors for efficient data exchange and control.</p>
+<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://selcukgok.com.tr/assets/images/1678997741809-eb059ef4b72a3f731db3cbb72dc4812d-eb059ef4b72a3f731db3cbb72dc4812d.gif" width="800" height="296" class="img_ev3q"></p>
+<p><a href="https://github.com/selcukgk29/modbus-tcp-web-client" target="_blank" rel="noopener noreferrer">GitHub</a></p>]]></content:encoded>
+            <category>MQTT</category>
+            <category>IOT</category>
+            <category>PYTHON</category>
+        </item>
+        <item>
             <title><![CDATA[A MQTT client with PyQt5]]></title>
             <link>https://selcukgok.com.tr/blog/mqttclient</link>
             <guid>https://selcukgok.com.tr/blog/mqttclient</guid>
@@ -176,9 +175,8 @@ Her MQTT topic'i için ayrı bir MongoDB koleksiyonu oluşturur ve bu koleksiyon
             <link>https://selcukgok.com.tr/blog/weatheraoo</link>
             <guid>https://selcukgok.com.tr/blog/weatheraoo</guid>
             <pubDate>Sat, 20 Aug 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[Modbus TCP web client.Allow you to easily write to and read from registers on a web server.]]></description>
-            <content:encoded><![CDATA[<p>Modbus TCP web client.Allow you to easily write to and read from registers on a web server.</p>
-<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://selcukgok.com.tr/assets/images/150692720-72eb3f70-d5e4-428e-abcb-f4c709097d23-925605623d84ecbca91f59aa897cc03e.png" width="1145" height="640" class="img_ev3q"></p>
+            <description><![CDATA[Docusaurus Plushie]]></description>
+            <content:encoded><![CDATA[<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://selcukgok.com.tr/assets/images/150692720-72eb3f70-d5e4-428e-abcb-f4c709097d23-925605623d84ecbca91f59aa897cc03e.png" width="1145" height="640" class="img_ev3q"></p>
 <p>This is simple Web Scraping project using beautifulsoup4 and requests module.</p>
 <p>Fetches the weather forcast based on the location (city) entered by the user.</p>
 <p><a href="https://github.com/selcukgk29/PySide2BeatifulSoupWebScrapping" target="_blank" rel="noopener noreferrer">GitHub</a></p>]]></content:encoded>
