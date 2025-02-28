@@ -4,10 +4,35 @@
         <title>👋 I'm Selcuk, a software &amp; System and Network Engineer. Blog</title>
         <link>https://selcukgok.com.tr/blog</link>
         <description>👋 I'm Selcuk, a software &amp; System and Network Engineer. Blog</description>
-        <lastBuildDate>Wed, 05 Feb 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 01 Mar 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Voice Recognation with Pi Pico using TinyML(Edge Impulse)]]></title>
+            <link>https://selcukgok.com.tr/blog/BasicMLProject</link>
+            <guid>https://selcukgok.com.tr/blog/BasicMLProject</guid>
+            <pubDate>Sat, 01 Mar 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Video]]></description>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="video">Video<a class="hash-link" aria-label="Direct link to Video" title="Direct link to Video" href="https://selcukgok.com.tr/blog/BasicMLProject#video">​</a></h3>
+<iframe width="560" height="315" src="https://youtube.com/embed/Wo9ATN-_wF4" frameborder="0"></iframe>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="genel-bakış--overview">Genel Bakış | Overview<a class="hash-link" aria-label="Direct link to Genel Bakış | Overview" title="Direct link to Genel Bakış | Overview" href="https://selcukgok.com.tr/blog/BasicMLProject#genel-bak%C4%B1%C5%9F--overview">​</a></h3>
+<p><strong>Türkçe:</strong><br>
+<!-- -->Bu proje, Raspberry Pi Pico mikrodenetleyicisi ve Edge Impulse platformunu kullanarak makine öğrenimi tabanlı bir ses sınıflandırma sistemi geliştirmeyi hedeflemektedir. Proje, düşük güçlü mikrodenetleyicilerle ses tanıma uygulamaları geliştirmek isteyenler için iyi bir örnek sunar.</p>
+<p>Raspberry Pi Pico, mikrodenetleyici tabanlı bir cihaz olup, çevresel cihazlarla iletişim kurarak veri toplama ve işleme işlemleri gerçekleştirebilir. Bu projede, seri port üzerinden ses verisi toplanır ve bu veriler WAV formatında kaydedilir. Bu sayede, ses verileri model eğitimi için uygun hale getirilir.</p>
+<p>Edge Impulse, makine öğrenimi ve yapay zeka projelerini geliştirmek için kullanılan bir platformdur. Bu platform, mikrodenetleyicilerle çalışan cihazlar üzerinde veri toplama, sınıflandırma ve model eğitimi yapmayı kolaylaştırır. Proje, Arduino veya Raspberry Pi Pico gibi düşük güçlü mikrodenetleyiciler ile ses verisi kaydedilmesi, sınıflandırılması ve model eğitimi süreçlerini adım adım açıklar.</p>
+<p>Ses tanıma uygulamaları, sesli komutları tanımak, sesli yanıtlar üretmek veya belirli sesleri tanımak gibi birçok alanda kullanılmaktadır. Bu proje, düşük enerji tüketimiyle çalışabilen mikrodenetleyicilerle ses tanıma sistemleri geliştirmek isteyenler için faydalı bir rehber sunar.</p>
+<p><strong>English:</strong><br>
+<!-- -->This project aims to develop a machine learning-based voice classification system using the Raspberry Pi Pico microcontroller and the Edge Impulse platform. The project provides a good example for those who want to develop voice recognition applications with low-power microcontrollers.</p>
+<p>The Raspberry Pi Pico is a microcontroller-based device that can communicate with peripheral devices to collect and process data. In this project, audio data is collected via the serial port and saved in WAV format. This allows the audio data to be made suitable for model training.</p>
+<p>Edge Impulse is a platform used to develop machine learning and artificial intelligence projects. It simplifies data collection, classification, and model training for devices working with microcontrollers. The project explains step-by-step how to record audio data, classify it, and train a model using low-power microcontrollers like Arduino or Raspberry Pi Pico.</p>
+<p>Voice recognition applications are used in many fields, such as recognizing voice commands, generating spoken responses, or identifying specific sounds. This project provides a useful guide for those who want to develop voice recognition systems using low-energy microcontrollers.</p>
+<p>Kodlar için:
+<a href="https://github.com/selcukgk29/voice_commandPiPico" target="_blank" rel="noopener noreferrer">GitHub</a></p>]]></content:encoded>
+            <category>pico</category>
+            <category>edge impulse</category>
+            <category>ML</category>
+        </item>
         <item>
             <title><![CDATA[Smart Cluster for Electric Karting]]></title>
             <link>https://selcukgok.com.tr/blog/karting-cluster</link>
@@ -118,6 +143,19 @@ Her MQTT topic'i için ayrı bir MongoDB koleksiyonu oluşturur ve bu koleksiyon
             <category>linux</category>
         </item>
         <item>
+            <title><![CDATA[Modbus TCP web client.]]></title>
+            <link>https://selcukgok.com.tr/blog/modbustcpwebclient</link>
+            <guid>https://selcukgok.com.tr/blog/modbustcpwebclient</guid>
+            <pubDate>Thu, 15 Sep 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[A Modbus TCP web client facilitates easy communication with Modbus TCP servers, enabling seamless reading from and writing to registers. This application is commonly used in industrial automation, energy management, building automation, and IoT sectors for efficient data exchange and control.]]></description>
+            <content:encoded><![CDATA[<p>A Modbus TCP web client facilitates easy communication with Modbus TCP servers, enabling seamless reading from and writing to registers. This application is commonly used in industrial automation, energy management, building automation, and IoT sectors for efficient data exchange and control.</p>
+<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://selcukgok.com.tr/assets/images/1678997741809-eb059ef4b72a3f731db3cbb72dc4812d-eb059ef4b72a3f731db3cbb72dc4812d.gif" width="800" height="296" class="img_ev3q"></p>
+<p><a href="https://github.com/selcukgk29/modbus-tcp-web-client" target="_blank" rel="noopener noreferrer">GitHub</a></p>]]></content:encoded>
+            <category>MQTT</category>
+            <category>IOT</category>
+            <category>PYTHON</category>
+        </item>
+        <item>
             <title><![CDATA[Linux System memory konfigürasyonu.]]></title>
             <link>https://selcukgok.com.tr/blog/linuxsysmem</link>
             <guid>https://selcukgok.com.tr/blog/linuxsysmem</guid>
@@ -169,19 +207,6 @@ Her MQTT topic'i için ayrı bir MongoDB koleksiyonu oluşturur ve bu koleksiyon
 <p>This is simple Web Scraping project using beautifulsoup4 and requests module.</p>
 <p>Fetches the weather forcast based on the location (city) entered by the user.</p>
 <p><a href="https://github.com/selcukgk29/PySide2BeatifulSoupWebScrapping" target="_blank" rel="noopener noreferrer">GitHub</a></p>]]></content:encoded>
-            <category>PYTHON</category>
-        </item>
-        <item>
-            <title><![CDATA[Modbus TCP web client.]]></title>
-            <link>https://selcukgok.com.tr/blog/modbustcpwebclient</link>
-            <guid>https://selcukgok.com.tr/blog/modbustcpwebclient</guid>
-            <pubDate>Thu, 05 Sep 2019 00:00:00 GMT</pubDate>
-            <description><![CDATA[A Modbus TCP web client facilitates easy communication with Modbus TCP servers, enabling seamless reading from and writing to registers. This application is commonly used in industrial automation, energy management, building automation, and IoT sectors for efficient data exchange and control.]]></description>
-            <content:encoded><![CDATA[<p>A Modbus TCP web client facilitates easy communication with Modbus TCP servers, enabling seamless reading from and writing to registers. This application is commonly used in industrial automation, energy management, building automation, and IoT sectors for efficient data exchange and control.</p>
-<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://selcukgok.com.tr/assets/images/1678997741809-eb059ef4b72a3f731db3cbb72dc4812d-eb059ef4b72a3f731db3cbb72dc4812d.gif" width="800" height="296" class="img_ev3q"></p>
-<p><a href="https://github.com/selcukgk29/modbus-tcp-web-client" target="_blank" rel="noopener noreferrer">GitHub</a></p>]]></content:encoded>
-            <category>MQTT</category>
-            <category>IOT</category>
             <category>PYTHON</category>
         </item>
     </channel>

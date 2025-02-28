@@ -40,6 +40,8 @@ const config: Config = {
         },
         blog: {
           showReadingTime: true,
+          blogSidebarTitle: 'All posts',
+          blogSidebarCount: 'ALL',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
         },
@@ -81,12 +83,8 @@ const config: Config = {
           items: [
             {
               label: "LinkedIn",
-              href: "https://www.linkedin.com/in/selçuk-gök-795972151/",
-            },
-            {
-              label: "Discord",
-              href: "https://discord.gg/eFgRR6fYAR",
-            },
+              href: "https://www.linkedin.com/in/selcukgok",
+            },      
             {
               label: "GitHub",
               href: "https://github.com/selcukgk29",
