@@ -15,7 +15,7 @@
             <pubDate>Sat, 01 Mar 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Video]]></description>
             <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="video">Video<a class="hash-link" aria-label="Direct link to Video" title="Direct link to Video" href="https://selcukgok.com.tr/blog/BasicMLProject#video">​</a></h3>
-<iframe width="560" height="315" src="https://youtube.com/shorts/Wo9ATN-_wF4" frameborder="0"></iframe>
+<iframe width="560" height="315" src="https://youtube.com/embed/Wo9ATN-_wF4" frameborder="0"></iframe>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="genel-bakış--overview">Genel Bakış | Overview<a class="hash-link" aria-label="Direct link to Genel Bakış | Overview" title="Direct link to Genel Bakış | Overview" href="https://selcukgok.com.tr/blog/BasicMLProject#genel-bak%C4%B1%C5%9F--overview">​</a></h3>
 <p><strong>Türkçe:</strong><br>
 <!-- -->Bu proje, Raspberry Pi Pico mikrodenetleyicisi ve Edge Impulse platformunu kullanarak makine öğrenimi tabanlı bir ses sınıflandırma sistemi geliştirmeyi hedeflemektedir. Proje, düşük güçlü mikrodenetleyicilerle ses tanıma uygulamaları geliştirmek isteyenler için iyi bir örnek sunar.</p>
