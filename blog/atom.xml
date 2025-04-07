@@ -2,11 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://selcukgok.com.tr/blog</id>
     <title>👋 I'm Selcuk, a software &amp; System and Network Engineer. Blog</title>
-    <updated>2025-03-01T00:00:00.000Z</updated>
+    <updated>2025-04-07T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://selcukgok.com.tr/blog"/>
     <subtitle>👋 I'm Selcuk, a software &amp; System and Network Engineer. Blog</subtitle>
     <icon>https://selcukgok.com.tr/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[People Counting On Edge Computing Device]]></title>
+        <id>https://selcukgok.com.tr/blog/PeopleCountingOnEdgeDevice</id>
+        <link href="https://selcukgok.com.tr/blog/PeopleCountingOnEdgeDevice"/>
+        <updated>2025-04-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[🖼️ Proje Görseli / GIF]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="️-proje-görseli--gif">🖼️ Proje Görseli / GIF<a class="hash-link" aria-label="Direct link to 🖼️ Proje Görseli / GIF" title="Direct link to 🖼️ Proje Görseli / GIF" href="https://selcukgok.com.tr/blog/PeopleCountingOnEdgeDevice#%EF%B8%8F-proje-g%C3%B6rseli--gif">​</a></h3>
+<p><img decoding="async" loading="lazy" alt="People Counting Demo" src="https://selcukgok.com.tr/assets/images/Animation-6c6838cfe74e1da541abd620a3d4fb6d.gif" width="1065" height="773" class="img_ev3q"></p>
+<blockquote>
+<p>Yukarıdaki GIF, sistemin gerçek zamanlı insan sayımı sürecini göstermektedir.</p>
+</blockquote>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="genel-bakış--overview">Genel Bakış | Overview<a class="hash-link" aria-label="Direct link to Genel Bakış | Overview" title="Direct link to Genel Bakış | Overview" href="https://selcukgok.com.tr/blog/PeopleCountingOnEdgeDevice#genel-bak%C4%B1%C5%9F--overview">​</a></h3>
+<p><strong>🇹🇷 Türkçe:</strong><br>
+<!-- -->Gömülü sistem üzerinde geliştirdiğim bu proje, gerçek zamanlı insan sayımı gerçekleştirerek elde ettiği verileri TCP veya MQTT protokolleri üzerinden uzak bir sunucuya güvenli bir şekilde iletmektedir. Sistem, görüntü işleme ve nesne takibi algoritmalarıyla çalışmakta olup, düşük donanım kaynaklarına sahip ortamlarda dahi yüksek doğrulukta ve kararlı performans sunmaktadır.</p>
+<p>Ağ bağlantısının kesildiği durumlarda, veriler geçici olarak yerel bellekte saklanmakta ve bağlantı yeniden kurulduğunda, geçmiş veriler ‘recovered’ etiketiyle sunucuya iletilerek veri bütünlüğü sağlanmaktadır. Bu sayede sistem, hem gerçek zamanlı veri akışı hem de kesintisiz kayıt özelliğiyle endüstriyel uygulamalara uygun bir çözüm sunar.</p>
+<p><strong>English:</strong><br>
+<!-- -->This project implements a real-time people counting system on an embedded device, which securely transmits the collected data to a remote server via TCP or MQTT protocols. The system operates using image processing and object tracking algorithms, delivering reliable performance even in resource-constrained environments.</p>
+<p>In the event of a network disconnection, data is temporarily stored locally. Once the connection is reestablished, previously collected data is sent to the server with a “recovered” label, ensuring data integrity. This makes the solution ideal for industrial use cases requiring uninterrupted data collection and reliable communication.</p>
+<hr>]]></content>
+        <author>
+            <name>Selcuk Gok</name>
+            <uri>https://github.com/selcukgk29</uri>
+        </author>
+        <category label="image processing" term="image processing"/>
+        <category label="counting" term="counting"/>
+        <category label="people counting" term="people counting"/>
+        <category label="ai" term="ai"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Voice Recognation with Pi Pico using TinyML(Edge Impulse)]]></title>
         <id>https://selcukgok.com.tr/blog/BasicMLProject</id>
