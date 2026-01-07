@@ -3,8 +3,8 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: "👋 I'm Selcuk, a software & System and Network Engineer.",
-  tagline: "Welcome to my personal blog.",
+  title: "Selcuk Gok",
+  tagline: "Software & System Engineer | Embedded Linux | IoT | Desktop Applications",
   favicon: "img/favicon.ico",
   // Set the production url of your site here
   url: "https://selcukgok.com.tr",
@@ -55,23 +55,46 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: false,
+      respectPrefersColorScheme: false,
+    },
     navbar: {
-      title: "About",
+      title: "Selcuk Gok",
       logo: {
-        alt: "My Site Logo",
+        alt: "Selcuk Gok Logo",
         src: "img/logo.svg",
       },
+      hideOnScroll: false,
       items: [
-        { to: "/blog", label: "Blog", position: "left" },
+        { to: "/", label: "Home", position: "left" },
+        { to: "/blog", label: "Projects", position: "left" },
         {
           href: "https://drive.google.com/file/d/15EO4LtaYVvO-T2a_baYcC1FYQONeYMSV/view?usp=sharing",
           position: "left",
-          label: "CV",
+          label: "Resume",
+          className: "navbar__item--resume",
+        },
+        {
+          href: "mailto:selcukgok29@gmail.com",
+          label: "Contact",
+          position: "left",
+          className: "navbar__item--contact",
         },
         {
           href: "https://github.com/selcukgk29",
-          label: "GitHub",
           position: "right",
+          className: "header-github-link",
+          "aria-label": "GitHub",
+          label: " ",
+        },
+        {
+          href: "https://www.linkedin.com/in/selcukgok",
+          position: "right",
+          className: "header-linkedin-link",
+          "aria-label": "LinkedIn",
+          label: " ",
         },
       ],
     },
@@ -79,33 +102,58 @@ const config: Config = {
       style: "dark",
       links: [
         {
-          title: "Community",
+          title: "Navigation",
           items: [
             {
-              label: "LinkedIn",
-              href: "https://www.linkedin.com/in/selcukgok",
-            },      
+              label: "Home",
+              to: "/",
+            },
             {
-              label: "GitHub",
-              href: "https://github.com/selcukgk29",
+              label: "Projects",
+              to: "/blog",
+            },
+            {
+              label: "Resume",
+              href: "https://drive.google.com/file/d/15EO4LtaYVvO-T2a_baYcC1FYQONeYMSV/view?usp=sharing",
             },
           ],
         },
         {
-          title: "More",
+          title: "Connect",
           items: [
             {
-              label: "Blog",
-              to: "/blog",
+              label: "LinkedIn",
+              href: "https://www.linkedin.com/in/selcukgok",
             },
             {
-              label: "Mail",
-              href: "mailto:selcuksmtp1@gmail.com",
+              label: "GitHub",
+              href: "https://github.com/selcukgk29",
+            },
+            {
+              label: "Email",
+              href: "mailto:selcukgok29@gmail.com",
+            },
+          ],
+        },
+        {
+          title: "Tech Stack",
+          items: [
+            {
+              label: "Embedded Linux",
+              to: "/blog/tags/linux",
+            },
+            {
+              label: "Python",
+              to: "/blog/tags/python",
+            },
+            {
+              label: "MQTT & IoT",
+              to: "/blog/tags/mqtt",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} selcukgok.com.tr`,
+      copyright: `© ${new Date().getFullYear()} Selcuk Gok. Built with passion.`,
     },
     prism: {
       theme: prismThemes.github,

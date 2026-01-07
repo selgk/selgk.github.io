@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://selcukgok.com.tr/blog</id>
-    <title>👋 I'm Selcuk, a software &amp; System and Network Engineer. Blog</title>
+    <title>Selcuk Gok Blog</title>
     <updated>2025-03-01T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://selcukgok.com.tr/blog"/>
-    <subtitle>👋 I'm Selcuk, a software &amp; System and Network Engineer. Blog</subtitle>
+    <subtitle>Selcuk Gok Blog</subtitle>
     <icon>https://selcukgok.com.tr/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Voice Recognation with Pi Pico using TinyML(Edge Impulse)]]></title>
