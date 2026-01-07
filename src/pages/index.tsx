@@ -85,16 +85,34 @@ const projects = [
 // ===== TIMELINE DATA =====
 const experience = [
   {
-    date: "2021 - Present",
-    title: "Software Engineer",
-    company: "Istanbul, Turkey",
-    description: "Developing embedded Linux systems, IoT applications, and cross-platform desktop software. Specializing in automotive and industrial automation projects.",
+    date: "Apr 2025 - Present",
+    title: "IoT Systems R&D Engineer",
+    company: "SmartFactory",
+    description: "Developing IoT systems and R&D projects for industrial automation solutions.",
   },
   {
-    date: "2020 - 2021",
-    title: "Junior Software Developer",
-    company: "Istanbul, Turkey",
-    description: "Started professional career working on Python applications, network programming, and system administration.",
+    date: "Dec 2024 - Mar 2025",
+    title: "Industrial Network Engineer",
+    company: "Portel Teknoloji",
+    description: "Network design, wireless networking, and industrial network solutions.",
+  },
+  {
+    date: "Jun 2022 - Jun 2024",
+    title: "Software & Network Specialist",
+    company: "Mikrodev",
+    description: "Designed web servers for 4G routers and RTU devices. Developed interfaces for system monitoring, network configuration, firewall, NAT, IPSEC, and OpenVPN settings.",
+  },
+  {
+    date: "Dec 2021 - Apr 2022",
+    title: "System And Network Specialist",
+    company: "Fenerbahçe University",
+    description: "TCP/IP, LAN & WAN technologies, Switching, Routing, VMWare/Hyper-V virtualization, Linux and Windows Server administration.",
+  },
+  {
+    date: "Aug 2019 - Jan 2020",
+    title: "Engineering Intern",
+    company: "NEVA Automation",
+    description: "Building Automation and Energy Management SCADA system development with Schneider Building Operation Workstation for hospitals.",
   },
 ];
 
