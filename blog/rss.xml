@@ -4,10 +4,47 @@
         <title>Selcuk Gok Blog</title>
         <link>https://selcukgok.com.tr/blog</link>
         <description>Selcuk Gok Blog</description>
-        <lastBuildDate>Sun, 07 Sep 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 03 May 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[ESP32 Health Tracking Sensor]]></title>
+            <link>https://selcukgok.com.tr/blog/ESP32HealthSensor</link>
+            <guid>https://selcukgok.com.tr/blog/ESP32HealthSensor</guid>
+            <pubDate>Sun, 03 May 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[ESP32 Sensor Demo]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="esp32-sensor-demo"><img decoding="async" loading="lazy" alt="ESP32 Sensor Demo" src="https://selcukgok.com.tr/assets/images/image-4e1d49752f9db41fa3086aade2a8bbde.png" width="3009" height="3010" class="img_ev3q"><a class="hash-link" aria-label="Direct link to esp32-sensor-demo" title="Direct link to esp32-sensor-demo" href="https://selcukgok.com.tr/blog/ESP32HealthSensor#esp32-sensor-demo">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="genel-bakış--overview">Genel Bakış | Overview<a class="hash-link" aria-label="Direct link to Genel Bakış | Overview" title="Direct link to Genel Bakış | Overview" href="https://selcukgok.com.tr/blog/ESP32HealthSensor#genel-bak%C4%B1%C5%9F--overview">​</a></h3>
+<p>Bu proje; nabız, kan oksijen saturasyonu (SpO2), vücut sıcaklığı ve hareket verilerini gerçek zamanlı olarak toplayan, düşme algılayan ve tüm verileri MQTT protokolü üzerinden buluta/sunucuya ileten bir sağlık izleme sistemidir. LILYGO TTGO T-Display (ESP32) platformu üzerinde çalışan sistem, MAX30102 nabız/SpO2 sensörü, ADXL345 ivmemetre ve NTC termistör bileşenlerinden oluşmaktadır. Ayrıca Telegram botu ile anlık sorgulama, alarm bildirimleri ve periyodik raporlar sunulmaktadır.</p>
+<p><strong>English:</strong><br>
+<!-- -->This project is a health monitoring system that continuously collects heart rate, blood oxygen saturation (SpO2), body temperature, and motion data in real-time, detects falls, and transmits all data via MQTT protocol to a cloud/server. The system runs on the LILYGO TTGO T-Display (ESP32) platform and consists of MAX30102 heart rate/SpO2 sensor, ADXL345 accelerometer, and NTC thermistor components. It also provides a Telegram bot for real-time queries, alert notifications, and periodic reports.</p>
+<hr>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="komutlar">Komutlar<a class="hash-link" aria-label="Direct link to Komutlar" title="Direct link to Komutlar" href="https://selcukgok.com.tr/blog/ESP32HealthSensor#komutlar">​</a></h4>
+<table><thead><tr><th>Komut</th><th>Açıklama</th></tr></thead><tbody><tr><td><code>/baslat</code></td><td>Botu aktif eder</td></tr><tr><td><code>/durum</code></td><td>Anlık sensör verileri</td></tr><tr><td><code>/rapor_ac</code></td><td>Periyodik rapor başlatır</td></tr><tr><td><code>/rapor_kapat</code></td><td>Periyodik rapor durdurur</td></tr></tbody></table>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="alarmlar">Alarmlar<a class="hash-link" aria-label="Direct link to Alarmlar" title="Direct link to Alarmlar" href="https://selcukgok.com.tr/blog/ESP32HealthSensor#alarmlar">​</a></h4>
+<table><thead><tr><th>Alarm</th><th>Tetikleyici</th></tr></thead><tbody><tr><td>Düşme</td><td><code>wearable/alert/fall</code></td></tr><tr><td>Yüksek nabız</td><td>HR &gt; 120 BPM</td></tr><tr><td>Düşük nabız</td><td>HR &lt; 45 BPM</td></tr><tr><td>Düşük SpO2</td><td>SpO2 &lt; %90</td></tr></tbody></table>
+<hr>]]></content:encoded>
+            <category>esp32</category>
+            <category>sensr</category>
+            <category>MQTT</category>
+            <category>health monitoring</category>
+            <category>telegram bot</category>
+        </item>
+        <item>
+            <title><![CDATA[Astra İçin 3D Baskılı Gözlük Kabı]]></title>
+            <link>https://selcukgok.com.tr/blog/SunglassHolder</link>
+            <guid>https://selcukgok.com.tr/blog/SunglassHolder</guid>
+            <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[3D Baskılı Gözlük Kabı]]></description>
+            <content:encoded><![CDATA[<p><img decoding="async" loading="lazy" alt="3D Baskılı Gözlük Kabı" src="https://selcukgok.com.tr/assets/images/image-6ef3b019df305c5a0793b46a2db25108.png" width="1489" height="1817" class="img_ev3q"></p>
+<p>Araçta güneş gözlüğünü koyacak pratik ve güvenli bir yer bulamamak hepimizin ortak derdi. Ben de tavan aydınlatmasının oradaki boş alanı değerlendirip kendi 3D tasarımımla Astra'ya özel bir Gözlük Kabı ürettim. Amacım sonradan takılma gibi değil, sanki fabrikadan orijinal (OEM) opsiyonla çıkmış gibi durmasıydı. Üzerinde epey uğraştım ve sonucu sizinle paylaşmak istedim.</p>
+<hr>]]></content:encoded>
+            <category>3d printing</category>
+            <category>astra</category>
+            <category>car accessories</category>
+            <category>sunglass holder</category>
+        </item>
         <item>
             <title><![CDATA[Cloudflare Tunnel]]></title>
             <link>https://selcukgok.com.tr/blog/CloudflareTunnelDockerSetup</link>
